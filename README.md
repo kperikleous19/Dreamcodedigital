@@ -1,24 +1,23 @@
 # Dreamcodedigital
 
-savevillage/
-├── app/
-│   ├── (tabs)/
-│   │   ├── index.tsx          ← Home (Map)
-│   │   ├── alerts.tsx         ← Ειδοποιήσεις
-│   │   └── sos.tsx            ← SOS Screen
-│   ├── auth/
-│   │   ├── login.tsx
-│   │   └── register.tsx
-│   └── _layout.tsx
-├── components/
-│   ├── SOSButton.tsx
-│   ├── AlertCard.tsx
-│   ├── MapMarker.tsx
-│   └── EscapeRoute.tsx
-├── services/
-│   ├── api.ts                 ← REST calls (GET/POST)
-│   ├── location.ts            ← GPS / Geolocation
-│   └── notifications.ts      ← Firebase Push
-├── store/
-│   └── alertStore.ts          ← Zustand state
-└── app.json
+/backend
+  ├── config/
+  │     └── database.php
+  ├── api/
+  │     ├── register.php
+  │     ├── login.php
+  │     ├── send_alert.php
+  │     ├── get_alerts.php
+  ├── models/
+  │     ├── User.php
+  │     ├── Alert.php
+
+  /app
+  ├── screens/
+  │     ├── LoginScreen
+  │     ├── HomeScreen
+  │     ├── AlertScreen
+  ├── components/
+  │     ├── AlertButton
+  ├── services/
+  │     ├── api.js
